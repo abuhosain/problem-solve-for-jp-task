@@ -38,3 +38,23 @@ const addFive = x => x + 5;
 const composedFunction = x => addFive(double(square(x)));
 
 // console.log(composedFunction(3)); 
+
+
+// 5.Task: Find and Modify
+// Write a function that searches an array of objects for a specific person by name. If found, modify their age property. Print the updated array.
+
+const person = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Carol", age: 22 },
+];
+
+function updateAge(name, newAge) {
+  const person = person.find(p => p.name === name);
+  if (person) {
+    person.age = newAge;
+  }
+}
+
+updateAge("Bob", 35);
+// console.log(person);
