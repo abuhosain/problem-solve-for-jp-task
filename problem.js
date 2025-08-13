@@ -58,3 +58,17 @@ function updateAge(name, newAge) {
 
 updateAge("Bob", 35);
 // console.log(person);
+
+
+
+// 7.   Task: Leap Year Checker
+// Write a function that determines whether a given year is a leap year.
+// Example: Happy New Year
+
+function isLeapYear(year) {
+  return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+}
+
+const year = 2024;
+// console.log(`${year} is ${isLeapYear(year) ? "a leap year" : "not a leap year"}`);
+ 
